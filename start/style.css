@@ -1,0 +1,135 @@
+body{
+    width: 40%;
+    font-weight: bold;
+}
+
+.container{
+    display:grid;
+    grid-template: repeat(6,40px)/repeat(4,60px);
+    grid-template-areas: 
+    "main0 main0 main0 main0"
+    "plus less times divide"
+    "seven eight nine equal"
+    "four five six equal"
+    "one two three equal"
+    "zero dot AC equal";
+    border-radius: 10px;
+}
+
+div:not(.container){
+    border: 1px solid lightblue;
+}
+
+div.main0{
+ grid-area: main0;  
+ background-color: darkblue;
+ color: white;
+ border-left: none;
+ border-right: none;  
+ padding-right: 6px;
+ border-top-left-radius: 20px;
+ border-top-right-radius: 20px;
+}
+
+div.plus{
+    grid-area: plus;
+    border-left: none;
+    border-right: none;
+    background-color:  rgb(101, 199, 231);
+}
+
+div.less{
+    grid-area: less;
+    background-color: rgb(101, 199, 231);
+}
+
+div.divide{
+    grid-area: divide;
+    border-right: none; 
+    background-color: rgb(101, 199, 231);
+}
+
+div.times{
+    grid-area: times;
+    background-color: rgb(101, 199, 231);
+}
+
+div.one{
+    grid-area: one;
+    border-left: none;
+    background-color:  rgb(207, 234, 243) ;
+}
+
+div.two{
+    grid-area: two;
+    background-color:  rgb(207, 234, 243) ;
+}
+div.three{
+    grid-area: three;
+    background-color:  rgb(207, 234, 243) ;
+}
+div.four{
+    grid-area: four;
+    border-left: none;
+    background-color:  rgb(207, 234, 243) ;
+}
+div.five{
+    grid-area: five;
+    background-color:  rgb(207, 234, 243) ;
+}
+div.six{
+    grid-area: six;
+    background-color:  rgb(207, 234, 243) ;
+}
+div.seven{
+    grid-area: seven;
+    border-left: none;
+    background-color:  rgb(207, 234, 243) ;
+}
+div.eight{
+    grid-area: eight;
+    background-color:  rgb(207, 234, 243) ;
+}
+div.nine{
+    grid-area: nine;
+    background-color:  rgb(207, 234, 243) ;;
+}
+div.zero{
+    grid-area: zero;
+    border-left: none;
+    border-bottom: none;
+    background-color: rgb(207, 234, 243) ;
+    border-bottom-left-radius: 20px;
+}
+div.dot{
+    grid-area: dot;
+    background-color:  rgb(207, 234, 243) ;
+    border-bottom: none;
+
+}
+div.AC{
+    grid-area: AC;
+    background-color: rgb(207, 234, 243) ;
+    border-bottom: none;
+    
+}
+div.equal{
+    grid-area: equal;
+    border-right: none;
+    border-bottom: none;
+    border-left: none;
+    background-color: rgb(255, 0, 128);
+    border-bottom-right-radius: 20px;
+}
+
+.item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.main0.item{
+    justify-content: flex-end;
+}
+
+
